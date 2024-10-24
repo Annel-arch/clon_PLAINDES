@@ -86,6 +86,57 @@ nav{
     width: 100%;
 
 }
+
+.portada {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+
+  .carrusel {
+    display: flex;
+    scroll-snap-type: x mandatory; /* Hace que las imágenes "encajen" en su lugar al desplazarse */
+    overflow-x: scroll; /* Permite el desplazamiento horizontal */
+    scroll-behavior: smooth; /* Desplazamiento suave */
+    scrollbar-width: none; /*elimina barra de navegación*/
+  }
+  
+  .carrusel img {
+    min-width: 100%; 
+    height: auto;
+    scroll-snap-align: center; /* Las imágenes se alinearán en el centro al hacer scroll */
+  }
+  
+  
+  .portada button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(219, 146, 35, 0);
+    border: none;
+    color: white;
+    font-size: 38px;
+    font-weight: bolder;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+  }
+  
+  .button_left {
+    left: 140px;
+  }
+  
+  .button_right {
+    right: 140px;
+  }
+  
+  .portada button:hover {
+    color: rgba(116, 114, 114, 0.8);
+  }
+
 .Contenedores{
     display: flex;
     flex-direction: column;
@@ -149,31 +200,85 @@ h1{
     width: 16.4vw;
     height: 360px;
     background-image: url(servicios1.jpg);
-    background-size: 700px; /* Tamaño total de la imagen */
+    background-size: 550px; /* Tamaño total de la imagen */
     background-position: -150px ; /* Desplazamiento para mostrar una parte específica primero es en horizontal y el segundo en vertical*/
     background-repeat: no-repeat; /* Evitar que la imagen se repita */
     filter: grayscale(100%);
-    background-color: rgba(0, 0, 0, 0.258);
+    
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    
 }
+
 .tarjeta_contenido{
+    display: flex;
+    align-items: flex-end;
     font-size: 18px;
+    width: 16.4vw;
+    height: 360px;   
+    background: linear-gradient(to bottom, rgba(244, 239, 239, 0), rgb(98, 98, 92)) ;
+    padding-bottom: 40px;
+    letter-spacing: 0.2px;
+    line-height: 1.2;
+     
+}
+.tarjeta_contenido p{ 
     color: white;
     text-align: center;
     font-weight: 700;
     font-family: 'Open Sans', sans-serif;
-    padding: 15px;
-    margin-bottom: 30px;
-    background-color: #8d8d8d9b;
-     
+    padding-left: 10px;
+    padding-right: 10px;
 }
+.linea_tarjeta{
+    display: none;
+}
+.button_tarjeta{
+    display: none;
+    
+}
+.tarjeta:hover  {
+    filter: none;
+    
+}
+.tarjeta:hover .tarjeta_contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(244, 239, 239, 0), rgb(98, 98, 92)) ;
+    padding-bottom: 0;
+}
+
+.tarjeta:hover .linea_tarjeta {
+    display: flex;
+    border: none;         
+    height: 1.5px;          
+    background-color: rgb(255, 160, 7); 
+    width: 220px;          /* Longitud de la línea (ajusta según tus necesidades) */
+    margin: 23px 0;
+}
+.tarjeta:hover .button_tarjeta{
+    display: flex;
+    align-self: self-end;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color:  rgb(255, 160, 7);
+    height: 34px;
+    width: 90px;
+    border: solid rgb(255, 160, 7) ;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+
 .tarjeta2{
     width: 16.4vw;
     height: 360px;
     background-image: url(servicios2.jpg);
-    background-size: 800px; /* Tamaño total de la imagen */
+    background-size: 550px; /* Tamaño total de la imagen */
     background-position: -150px ; /* Desplazamiento para mostrar una parte específica primero es en horizontal y el segundo en vertical*/
     background-repeat: no-repeat; /* Evitar que la imagen se repita */
     filter: grayscale(100%);
@@ -186,7 +291,7 @@ h1{
     width: 16.4vw;
     height: 360px;
     background-image: url(servicios3.jpeg);
-    background-size: 800px; /* Tamaño total de la imagen */
+    background-size: 550px; /* Tamaño total de la imagen */
     background-position: -150px ; /* Desplazamiento para mostrar una parte específica primero es en horizontal y el segundo en vertical*/
     background-repeat: no-repeat; /* Evitar que la imagen se repita */
     filter: grayscale(100%);
@@ -199,7 +304,7 @@ h1{
     width: 16.4vw;
     height: 360px;
     background-image: url(servicios4.jpg);
-    background-size: 800px; /* Tamaño total de la imagen */
+    background-size: 550px; /* Tamaño total de la imagen */
     background-position: -150px ; /* Desplazamiento para mostrar una parte específica primero es en horizontal y el segundo en vertical*/
     background-repeat: no-repeat; /* Evitar que la imagen se repita */
     filter: grayscale(100%);
@@ -212,7 +317,7 @@ h1{
     width: 16.4vw;
     height: 360px;
     background-image: url(servicios5.jpg);
-    background-size: 800px; /* Tamaño total de la imagen */
+    background-size: 550px; /* Tamaño total de la imagen */
     background-position: -150px ; /* Desplazamiento para mostrar una parte específica primero es en horizontal y el segundo en vertical*/
     background-repeat: no-repeat; /* Evitar que la imagen se repita */
     filter: grayscale(100%);
@@ -225,7 +330,7 @@ h1{
     width: 16.4vw;
     height: 360px;
     background-image: url(servicios6.jpg);
-    background-size: 800px; /* Tamaño total de la imagen */
+    background-size: 550px; /* Tamaño total de la imagen */
     background-position: -150px ; /* Desplazamiento para mostrar una parte específica primero es en horizontal y el segundo en vertical*/
     background-repeat: no-repeat; /* Evitar que la imagen se repita */
     filter: grayscale(100%);
@@ -233,4 +338,379 @@ h1{
     display: flex;
     justify-content: center;
     align-items: flex-end;
+}
+.tarjeta2:hover  {
+    filter: none;
+    
+}
+.tarjeta2:hover .tarjeta_contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(244, 239, 239, 0), rgb(98, 98, 92)) ;
+    padding-bottom: 0;
+}
+
+.tarjeta2:hover .linea_tarjeta {
+    display: flex;
+    border: none;         
+    height: 1.5px;          
+    background-color: rgb(255, 160, 7); 
+    width: 220px;          /* Longitud de la línea (ajusta según tus necesidades) */
+    margin: 23px 0;
+}
+.tarjeta2:hover .button_tarjeta{
+    display: flex;
+    align-self: self-end;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color:  rgb(255, 160, 7);
+    height: 34px;
+    width: 90px;
+    border: solid rgb(255, 160, 7) ;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+.tarjeta3:hover  {
+    filter: none;
+    
+}
+.tarjeta3:hover .tarjeta_contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(244, 239, 239, 0), rgb(98, 98, 92)) ;
+    padding-bottom: 0;
+}
+
+.tarjeta3:hover .linea_tarjeta {
+    display: flex;
+    border: none;         
+    height: 1.5px;          
+    background-color: rgb(255, 160, 7); 
+    width: 220px;          /* Longitud de la línea (ajusta según tus necesidades) */
+    margin: 23px 0;
+}
+.tarjeta3:hover .button_tarjeta{
+    display: flex;
+    align-self: self-end;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color:  rgb(255, 160, 7);
+    height: 34px;
+    width: 90px;
+    border: solid rgb(255, 160, 7) ;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+.tarjeta4:hover  {
+    filter: none;
+    
+}
+.tarjeta4:hover .tarjeta_contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(244, 239, 239, 0), rgb(98, 98, 92)) ;
+    padding-bottom: 0;
+}
+
+.tarjeta4:hover .linea_tarjeta {
+    display: flex;
+    border: none;         
+    height: 1.5px;          
+    background-color: rgb(255, 160, 7); 
+    width: 220px;          /* Longitud de la línea (ajusta según tus necesidades) */
+    margin: 23px 0;
+}
+.tarjeta4:hover .button_tarjeta{
+    display: flex;
+    align-self: self-end;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color:  rgb(255, 160, 7);
+    height: 34px;
+    width: 90px;
+    border: solid rgb(255, 160, 7) ;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+.tarjeta5:hover  {
+    filter: none;
+    
+}
+.tarjeta5:hover .tarjeta_contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(244, 239, 239, 0), rgb(98, 98, 92)) ;
+    padding-bottom: 0;
+}
+
+.tarjeta5:hover .linea_tarjeta {
+    display: flex;
+    border: none;         
+    height: 1.5px;          
+    background-color: rgb(255, 160, 7); 
+    width: 220px;          /* Longitud de la línea (ajusta según tus necesidades) */
+    margin: 23px 0;
+}
+.tarjeta5:hover .button_tarjeta{
+    display: flex;
+    align-self: self-end;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color:  rgb(255, 160, 7);
+    height: 34px;
+    width: 90px;
+    border: solid rgb(255, 160, 7) ;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+.tarjeta6:hover  {
+    filter: none;
+    
+}
+.tarjeta6:hover .tarjeta_contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(244, 239, 239, 0), rgb(98, 98, 92)) ;
+    padding-bottom: 0;
+}
+
+.tarjeta6:hover .linea_tarjeta {
+    display: flex;
+    border: none;         
+    height: 1.5px;          
+    background-color: rgb(255, 160, 7); 
+    width: 220px;          /* Longitud de la línea (ajusta según tus necesidades) */
+    margin: 23px 0;
+}
+.tarjeta6:hover .button_tarjeta{
+    display: flex;
+    align-self: self-end;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color:  rgb(255, 160, 7);
+    height: 34px;
+    width: 90px;
+    border: solid rgb(255, 160, 7) ;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+
+.tarjetas_SR{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+
+
+}
+.tarjeta_SR{
+    width: 635px;
+    
+    border-bottom: #414246 solid 6px;
+}
+
+.img_SR {
+    width: 635px;
+    height: 358px;
+    background-image: url(SR1.jpg);
+    background-size: 650px; /* Tamaño total de la imagen */
+    background-position: 0px ; /* Desplazamiento para mostrar una parte específica primero es en horizontal y el segundo en vertical*/
+    background-repeat: no-repeat; /* Evitar que la imagen se repita */
+}
+.tri_h2{
+    width: 24PX;
+    height: 28px;
+}
+h2{
+    font-size: 28px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    padding-right: 16px;
+    padding-left: 5px;
+    
+}
+h4{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    padding-right: 16px;
+    padding-left: 5px;
+}
+.button_texto_SR{
+    background-color:  #414246;
+    height: 36px;
+    width: 90px;
+    border: solid #414246 ;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    padding: 0px;
+    border-radius: 4px 0px 0px 0px;
+    display: flex;
+    align-self: flex-end;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.texto_SR{
+    height: 300px;
+    
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.cont1{
+    
+    padding-top: 42px;
+}
+.cont2{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+}
+
+.tarjeta_SR:hover{
+    border-bottom: rgb(255, 160, 7) solid 6px;
+}
+.tarjeta_SR:hover .button_texto_SR{
+    background-color: rgb(255, 160, 7);
+    border: rgb(255, 160, 7) ;
+} 
+.img_SR2 {
+    width: 635px;
+    height: 358px;
+    background-image: url(SR2.png);
+    background-size: 650px; /* Tamaño total de la imagen */
+    background-position: 0px ; /* Desplazamiento para mostrar una parte específica primero es en horizontal y el segundo en vertical*/
+    background-repeat: no-repeat; /* Evitar que la imagen se repita */
+}
+.img_SR3 {
+    width: 635px;
+    height: 358px;
+    background-image: url(SR3.jpeg);
+    background-size: 650px; /* Tamaño total de la imagen */
+    background-position: 0px ; /* Desplazamiento para mostrar una parte específica primero es en horizontal y el segundo en vertical*/
+    background-repeat: no-repeat; /* Evitar que la imagen se repita */
+}
+.img_SR4 {
+    width: 635px;
+    height: 358px;
+    background-image: url(SR4.jpg);
+    background-size: 650px; /* Tamaño total de la imagen */
+    background-position: 0px ; /* Desplazamiento para mostrar una parte específica primero es en horizontal y el segundo en vertical*/
+    background-repeat: no-repeat; /* Evitar que la imagen se repita */
+}
+.img_SR5 {
+    width: 635px;
+    height: 358px;
+    background-image: url(SR5.jpeg);
+    background-size: 650px; /* Tamaño total de la imagen */
+    background-position: 0px ; /* Desplazamiento para mostrar una parte específica primero es en horizontal y el segundo en vertical*/
+    background-repeat: no-repeat; /* Evitar que la imagen se repita */
+}
+footer{
+    background-color: #414246;
+    display: flex;
+    justify-content: space-evenly;
+
+    margin-top: 40px;
+    height: 377px;
+}
+.footer1{
+    
+    width: 398px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 55px;
+}
+.footer1 p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 19px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+    color: white;
+}
+h6{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: white;
+    padding-bottom: 10px;
+}
+.contacto{
+    display: flex;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+}
+.footer2 p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    padding-left: 10px;
+    padding-right: 0px;
+    color: white;
+    
+}
+.footer2{
+    
+    width: 430px;
+    height: 275px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 55px;
+    border-left: solid white 1.5px;
+    border-right: solid white 1.5px;
+
+}
+.footer3{
+    
+    width: 398px;
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+}
+.logo_footer{
+    height: 80px;
+    width: 109.13px;
+}
+.icono_contacto{
+    height: 35px;
+    
+}
+.vista_fb{
+    width: 350px;
+    height: 130px;
 }
