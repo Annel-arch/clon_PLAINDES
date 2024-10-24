@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    height: 80px;
+    background-color: salmon;
+    border: green solid;
+}
+.nav a{
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    font-size: 13.5px;
+    color: #646569;
+    
+    padding: 30px 20px;
+    
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+.logo-plaindes{
+    
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    
+}
+.logo-plaindes img{
+    width: 228px;
+    height: 60px;
+}
+.redes{
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.redes a img{
+    width: 30px;
+    height: 30px;
+    
+}
+.buscador{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-family: inherit;
+    
+}
+.buscador img{
+    width: 26px;
+    height: 20px;
+}
+.buscador input{
+    display: flex;
+    height: 80px;
+    border: none;
+}
+.menu_icono{
+    
+    display: flex;
+    align-items: center;
+   padding-right: 15PX; 
+}
+.menu_icono a{
+    padding-right: 5px;
+}
+.icono_tri{
+    width: 8px;
+    height: 6px;
+}
+.portada img{
+    width: 100%;
+
+}
+.Contenedores{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0px 20px 0px;
+    background-color: blue;
+    width: 100%;
+    
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    background-color: #646569;
+    gap: 10px;
+}
+.titulo{
+    display: flex;
+        gap: 15px;
+    padding: 0px 90px 0px 90px;
+    
+    align-items: center;
+    
+}
+h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 38px;
+    color: #414246;
+}
+.tri_h1{
+    width: 25px;
+    height: 32px;
+    
+}
+.linea{
+    border: none;         
+    height: 2px;          
+    background-color: rgb(0, 0, 0, 0.2); 
+    width: 1060px;          /* Longitud de la línea (ajusta según tus necesidades) */
+    margin: 23px 0;
+}
+.linea_SR{
+    border: none;         
+    height: 2px;          
+    background-color: rgb(0, 0, 0, 0.2); 
+    width: 660px;          /* Longitud de la línea (ajusta según tus necesidades) */
+    margin: 23px 0;
+}
+.contenido {
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+    width: 100%;
+    padding: 0;
+}
