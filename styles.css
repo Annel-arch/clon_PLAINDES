@@ -11,8 +11,7 @@ header {
     width: 100%;
     background-color: white;
     height: 80px;
-    background-color: salmon;
-    border: green solid;
+    
 }
 .nav a{
     font-weight: 700;
@@ -92,7 +91,7 @@ nav{
     flex-direction: column;
     gap: 20px;
     padding: 20px 0px 20px 0px;
-    background-color: blue;
+    
     width: 100%;
     
 }
@@ -100,7 +99,7 @@ nav{
     display: flex;
     flex-direction: column;
     padding-bottom: 20px;
-    background-color: #646569;
+    
     gap: 10px;
 }
 .titulo{
@@ -138,7 +137,100 @@ h1{
 .contenido {
     display: flex;
     justify-content: center;
-    background-color: aqua;
+    
     width: 100%;
     padding: 0;
+}
+.columnas{
+    display: flex;
+    padding-top: 20px;
+}
+.tarjeta{
+    width: 16.4vw;
+    height: 360px;
+    background-image: url(servicios1.jpg);
+    background-size: 700px; /* Tamaño total de la imagen */
+    background-position: -150px ; /* Desplazamiento para mostrar una parte específica primero es en horizontal y el segundo en vertical*/
+    background-repeat: no-repeat; /* Evitar que la imagen se repita */
+    filter: grayscale(100%);
+    background-color: rgba(0, 0, 0, 0.258);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.tarjeta_contenido{
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    padding: 15px;
+    margin-bottom: 30px;
+    background-color: #8d8d8d9b;
+     
+}
+.tarjeta2{
+    width: 16.4vw;
+    height: 360px;
+    background-image: url(servicios2.jpg);
+    background-size: 800px; /* Tamaño total de la imagen */
+    background-position: -150px ; /* Desplazamiento para mostrar una parte específica primero es en horizontal y el segundo en vertical*/
+    background-repeat: no-repeat; /* Evitar que la imagen se repita */
+    filter: grayscale(100%);
+    background-color: rgba(0, 0, 0, 0.258);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.tarjeta3{
+    width: 16.4vw;
+    height: 360px;
+    background-image: url(servicios3.jpeg);
+    background-size: 800px; /* Tamaño total de la imagen */
+    background-position: -150px ; /* Desplazamiento para mostrar una parte específica primero es en horizontal y el segundo en vertical*/
+    background-repeat: no-repeat; /* Evitar que la imagen se repita */
+    filter: grayscale(100%);
+    background-color: rgba(0, 0, 0, 0.258);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.tarjeta4{
+    width: 16.4vw;
+    height: 360px;
+    background-image: url(servicios4.jpg);
+    background-size: 800px; /* Tamaño total de la imagen */
+    background-position: -150px ; /* Desplazamiento para mostrar una parte específica primero es en horizontal y el segundo en vertical*/
+    background-repeat: no-repeat; /* Evitar que la imagen se repita */
+    filter: grayscale(100%);
+    background-color: rgba(0, 0, 0, 0.258);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.tarjeta5{
+    width: 16.4vw;
+    height: 360px;
+    background-image: url(servicios5.jpg);
+    background-size: 800px; /* Tamaño total de la imagen */
+    background-position: -150px ; /* Desplazamiento para mostrar una parte específica primero es en horizontal y el segundo en vertical*/
+    background-repeat: no-repeat; /* Evitar que la imagen se repita */
+    filter: grayscale(100%);
+    background-color: rgba(0, 0, 0, 0.258);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.tarjeta6{
+    width: 16.4vw;
+    height: 360px;
+    background-image: url(servicios6.jpg);
+    background-size: 800px; /* Tamaño total de la imagen */
+    background-position: -150px ; /* Desplazamiento para mostrar una parte específica primero es en horizontal y el segundo en vertical*/
+    background-repeat: no-repeat; /* Evitar que la imagen se repita */
+    filter: grayscale(100%);
+    background-color: rgba(0, 0, 0, 0.258);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
